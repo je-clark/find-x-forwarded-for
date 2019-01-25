@@ -11,7 +11,6 @@ if __name__ == "__main__":
     pcap_fn = sys.argv[1]
     target_ip = sys.argv[2]
     print "Initiating basic IP check"
-    index = 0
     with open(pcap_fn, mode="rb") as pcap:
         print "PCAP Loaded"
         for line in pcap:
