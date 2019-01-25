@@ -4,7 +4,6 @@ import sys
 def iterate_basic_ip_check(line, target):
     match = re.match('X-Forwarded-For: (\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})',line)
     if match:
-        #print match.group(1)
         if match.group(1) == target:
             print "Target IP %s found" % target
 
